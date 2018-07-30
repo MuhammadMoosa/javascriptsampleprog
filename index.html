@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Multiplication Table</title>
+
+</head>
+<body>
+
+
+<style type="text/css">
+
+</style>
+<p id="moo"></p>
+
+
+
+
+  <script type="text/javascript">
+  /* var rows = prompt("How many rows for your multiplication table?");
+   var cols = prompt("How many columns for your multiplication table?");
+   var output;
+
+    if(rows == "" || rows == null)
+       rows = 10;
+    if(cols== "" || cols== null)
+       cols = 10;
+    createTable(rows, cols);
+    function createTable(rows, cols)
+    {
+      var j=1;
+      output = "<table border='1' width='500' cellspacing='0'cellpadding='5'>";
+      for(i=1;i<=rows;i++)
+      {
+      output = output + "<tr>";
+        while(j<=cols)
+        {
+        output = output + "<td>" + i*j + "</td>";
+        j = j+1;
+      }
+       output = output + "</tr>";
+       j = 1;
+    }
+    output = output + "</table>";
+
+    }
+
+
+
+
+    var a = document.getElementById("moo").innerHTML = output;
+    console.log(a)
+*/
+
+
+
+/*
+  var a =   6-"2" ;
+  a=0;
+  console.log(a)
+
+    function funcname(para){
+      return para+2; 
+    }
+
+
+    var fuckNmae = (params) => params +2
+
+    console.log(funcname(2),fuckNmae(2))
+
+
+ */
+
+
+
+ var abc = ["aa0","bb0","cc0","aa1","bb1","cc1","aa2","bb2","cc2","aa3","bb3","cc3","aa4","bb4","cc4","aa5","bb5","cc5","aa6","bb6","cc6"] 
+ 
+
+var i,j,temparray,chunkSiz = 3;
+var abcd = [];
+for (i=0,j=abc.length; i<j; i+=chunkSiz) {
+    temparray = abc.slice(i,i+chunkSiz);
+    abcd.push(temparray);
+    console.log(temparray, abc, i,abcd)
+}
+
+
+var array1 = [1,2,3,4];
+var array2 = [5,6,7,8];
+
+var sum = array1.map(function (num, idx) {
+  return num + array2[idx];
+});
+
+
+console.log("array1:" +array1);
+console.log("array2:" +array2);
+
+console.log("sum:" +sum)
+
+
+
+  </script>
+</body>
+</html>
